@@ -4,7 +4,7 @@
   "private": true,
   "description": "Mineiro Security - bot inteligente de segurança para Discord",
   "main": "index.js",
-  "author": "Giuliano Ribeiro"
+  "author": "Giuliano Ribeiro",
   "scripts": {
     "start": "node index.js",
     "deploy": "node deploy-commands.js",

@@ -1,0 +1,20 @@
+{
+  "name": "mineiro-security",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mineiro Security - bot inteligente de segurança para Discord",
+  "main": "index.js",
+  "author": "Giuliano Ribeiro"
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js",
+    "check": "node --check index.js && node --check deploy-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.0",
+    "dotenv": "^17.4.0",
+    "jpeg-js": "^0.4.4",
+    "jsqr": "^1.4.0",
+    "pngjs": "^7.0.0"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id-do-seu-servidor": {
+    "enabled": true,
+    "language": "pt-BR",
+    "logChannelId": "",
+    "adminRoleIds": [],
+    "bypassRoleIds": [],
+    "modules": {
+      "messageAnalysis": true,
+      "aiModeration": true,
+      "imageAnalysis": true,
+      "maliciousLinks": true,
+      "raidProtection": true,
+      "autoPunishment": true,
+      "reports": true,
+      "reputation": true
+    },
+    "sensitivity": 65,
+    "actions": {
+      "low": "log",
+      "medium": "delete",
+      "high": "timeout",
+      "critical": "ban"
+    },
+    "timeouts": {
+      "mediumMinutes": 10,
+      "highMinutes": 60
+    },
+    "linkPolicy": {
+      "blockedChannels": [
+        "canais-bloqueados"
+      ],
+      "allowedDomains": [
+        "youtube.com"
+      ],
+      "blockInvites": true,
+      "blockShorteners": true,
+      "blockDownloads": true
+    },
+    "raid": {
+      "joinWindowSeconds": 60,
+      "joinThreshold": 8,
+      "newAccountDays": 7,
+      "autoLock": false
+    },
+    "image": {
+      "detectQrCodes": true,
+      "flagNewAccountsWithImages": true,
+      "newAccountDays": 7
+    },
+    "ai": {
+      "enabled": true,
+      "mode": "assist",
+      "minConfidence": 0.82,
+      "maxTokens": 900
+    }
+  }
+}
